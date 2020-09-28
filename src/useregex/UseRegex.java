@@ -34,6 +34,23 @@ public class UseRegex {
 			else {
 			System.out.println("Invalid last Name");
 			}
+			System.out.println("Enter Email");
+			String email=s.nextLine();
+			Pattern pattern2=Pattern.compile("^abc([.+_-]{0,1}[0-9a-z]+)?@[a-z0-9]+(\\.[a-z]{2,}){1,2}$");		
+			Matcher matcher2=pattern2.matcher(lname);
+			
+			boolean matchFound2=matcher2.find();
+			if(matchFound2)
+			{
+				System.out.println("Valid email");
+			}
+			else {
+			System.out.println("Invalid email");
+			}
+			
+			
+			
+			
 		}
 
 		}
