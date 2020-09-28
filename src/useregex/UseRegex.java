@@ -37,7 +37,7 @@ public class UseRegex {
 			System.out.println("Enter Email");
 			String email=s.nextLine();
 			Pattern pattern2=Pattern.compile("^abc([.+_-]{0,1}[0-9a-z]+)?@[a-z0-9]+(\\.[a-z]{2,}){1,2}$");		
-			Matcher matcher2=pattern2.matcher(lname);
+			Matcher matcher2=pattern2.matcher(email);
 			
 			boolean matchFound2=matcher2.find();
 			if(matchFound2)
@@ -47,7 +47,19 @@ public class UseRegex {
 			else {
 			System.out.println("Invalid email");
 			}
+			System.out.println("Enter Phone Number");
+			String phno=s.nextLine();
+			Pattern pattern3=Pattern.compile("^abc([.+_-]{0,1}[0-9a-z]+)?@[a-z0-9]+(\\.[a-z]{2,}){1,2}$");		
+			Matcher matcher3=pattern3.matcher(phno);
 			
+			boolean matchFound3=matcher3.find();
+			if(matchFound3)
+			{
+				System.out.println("Valid Phone Number");
+			}
+			else {
+			System.out.println("Invalid Phone Number");
+			}
 			
 			
 			
