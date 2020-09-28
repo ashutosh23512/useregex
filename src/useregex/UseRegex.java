@@ -10,7 +10,7 @@ public class UseRegex {
 			System.out.println("Enter First Name");
 			Scanner s=new Scanner(System.in);
 			String fname=s.nextLine();
-			Pattern pattern=Pattern.compile("^[A-Z]{1}[a-z]{2,}");		
+			Pattern pattern=Pattern.compile("^[A-Z]{1}[a-z A-Z]{2,}");		
 			Matcher matcher=pattern.matcher(fname);
 			
 			boolean matchFound=matcher.find();
